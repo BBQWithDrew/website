@@ -5,6 +5,7 @@ import { pageAnimation, titleAnim } from "../Animation";
 import styled from "styled-components";
 import family3 from "../img/Family3.png";
 import { Image } from "../styles";
+const EMAIL_KEY = process.env.REACT_APP_EMAIL_KEY;
 export const ContactUs = () => {
   const form = useRef();
 
@@ -12,12 +13,7 @@ export const ContactUs = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_1hl34te",
-        "template_efrk56x",
-        form.current,
-        "dlBkddNZsvlCIGq6Z"
-      )
+      .sendForm("service_1hl34te", "template_efrk56x", form.current, EMAIL_KEY)
       .then(
         (result) => {
           console.log(result.text);

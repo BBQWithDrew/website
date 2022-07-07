@@ -35,6 +35,7 @@ function App() {
       >
         <Routes location={location} key={location.pathname}>
           <Route path="/" exact element={<AboutBBQ />} />
+          <Route path="/website" exact element={<AboutBBQ />} />
           <Route path="/work" exact element={<OurWork />} />
           <Route path="/contact" exact element={<ContactUs />} />
           <Route path="/work/:id" exact element={<EventDetail />} />
