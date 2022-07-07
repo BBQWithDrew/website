@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.js": "/website/static/js/main.8ae8ccb2.js",
+    "static/js/787.95742356.chunk.js": "/website/static/js/787.95742356.chunk.js",
+    "static/media/WeddingMirror.png": "/website/static/media/WeddingMirror.a52131e7e0a421d49ae0.png",
+    "static/media/ShedGrill.png": "/website/static/media/ShedGrill.7bc8373cf3e5b528f67c.png",
+    "static/media/Family1.png": "/website/static/media/Family1.44eeb16838f770af0301.png",
+    "static/media/Family.png": "/website/static/media/Family.b9d457155e71976ce654.png",
+    "static/media/GrillTrailor.png": "/website/static/media/GrillTrailor.3c24f93912262273f691.png",
+    "static/media/Family3.png": "/website/static/media/Family3.0c5172c8c3e34ea31fb7.png",
+    "static/media/CoverMeat.png": "/website/static/media/CoverMeat.01018bc79bd3d8dd5399.png",
+    "static/media/GrillonGrill.png": "/website/static/media/GrillonGrill.596e9147df554f5fb5b3.png",
+    "static/media/BBQSign.png": "/website/static/media/BBQSign.fa9248e18baa53134abe.png",
+    "static/media/FullService.png": "/website/static/media/FullService.f5904fd7577579b36de8.png",
+    "static/media/DrewWinter.png": "/website/static/media/DrewWinter.05bc03d2483c8eff1b36.png",
+    "static/media/WeddingBrisket.png": "/website/static/media/WeddingBrisket.75f61a2c5e2d6e5e4c6a.png",
+    "static/media/Family2.png": "/website/static/media/Family2.4893379e84bc2416a5d6.png",
+    "static/media/Logo.PNG": "/website/static/media/Logo.6a5c1a8234b6ce57ee63.PNG",
+    "static/media/clock.svg": "/website/static/media/clock.96f4d6e305bcf09f6ab49011150aa96d.svg",
+    "static/media/teamwork.svg": "/website/static/media/teamwork.fc65bb98385cec6173b2ace6a1cdbbe7.svg",
+    "static/media/money.svg": "/website/static/media/money.75321fb573afc3644d8f6d4f153ed5c0.svg",
+    "static/media/diaphragm.svg": "/website/static/media/diaphragm.43cd6f2a8448bd445b920a7ae8f041fb.svg",
+    "index.html": "/website/index.html",
+    "main.8ae8ccb2.js.map": "/website/static/js/main.8ae8ccb2.js.map",
+    "787.95742356.chunk.js.map": "/website/static/js/787.95742356.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8ae8ccb2.js"
+  ]
+}
