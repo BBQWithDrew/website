@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <div className="text-white sm:w-[500px] xs:w-[350px]">
       <Description variants={fade}>
-        <motion.div>
+        <motion.div className="lg:w-[700px]">
           <Hide>
             <motion.h2 variants={titleAnim}>
               Drews Beaver <span>Dam BBQ</span>
@@ -22,9 +22,7 @@ const AboutSection = () => {
             <motion.h2 variants={titleAnim}>in WI</motion.h2>
           </Hide>
         </motion.div>
-        <motion.p variants={fade} className="text-white">
-          Contact us for catering availablity.
-        </motion.p>
+
         {/* <Link to="/contact">
           <motion.button variants={fade}>Contact Us</motion.button>
         </Link> */}

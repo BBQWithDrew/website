@@ -38,7 +38,7 @@ const ParallaxStuff = () => {
   const backgroundY = useTransform(scrollProgress, [0, 1], ["0%", "100%"]);
   const sectionY = useTransform(scrollProgress, [0, 1], ["0%", "300%"]);
   const video = useTransform(scrollProgress2, [0, 1], ["-50%", "100%"]);
-  const afterVid = useTransform(scrollProgress3, [0, 1], ["-25%", "30%"]);
+  const afterVid = useTransform(scrollProgress3, [0, 1], ["-10%", "10%"]);
 
   return (
     <motion.div>
@@ -76,7 +76,7 @@ const ParallaxStuff = () => {
         style={{ y: video }}
         className="relative z-0 lg:h-[45rem]"
       >
-        <video loop muted autoPlay>
+        <video playsInline loop muted autoPlay>
           <source src={drone} type="video/mp4"></source>
         </video>
       </motion.div>
