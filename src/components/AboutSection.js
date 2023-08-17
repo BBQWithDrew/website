@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { About, Description, Image, Hide } from "../styles";
-import { titleAnim, fade, photoAnim } from "../Animation";
-import { Link } from "react-router-dom";
+import { Description, Hide } from "../styles";
+import { titleAnim, fade } from "../Animation";
+
 const AboutSection = () => {
   return (
     <div className="text-white sm:w-[500px] xs:w-[350px]">

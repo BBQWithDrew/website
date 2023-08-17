@@ -7,12 +7,9 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import DrewWinter from "../img/DrewWinter.png";
 import { Reveal } from "./reveal";
-import { scrollReval } from "../Animation";
 
 //Styled
 import styled from "styled-components";
-import { About, Description, Image } from "../styles";
-import { motion } from "framer-motion";
 
 const ServicesSection = () => {
   return (
