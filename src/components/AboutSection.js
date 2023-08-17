@@ -5,22 +5,24 @@ import { titleAnim, fade, photoAnim } from "../Animation";
 import { Link } from "react-router-dom";
 const AboutSection = () => {
   return (
-    <div className="text-white sm:w-[500px] xs:w-full">
+    <div className="text-white sm:w-[500px] xs:w-[350px]">
       <Description variants={fade}>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>Bringing you the</motion.h2>
-          </Hide>
-          <Hide>
             <motion.h2 variants={titleAnim}>
-              best <span>BBQ</span> in
+              Drews Beaver <span>Dam BBQ</span>
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>WI</motion.h2>
+            <motion.h2 variants={titleAnim}>
+              Bringing you the best BBQ
+            </motion.h2>
+          </Hide>
+          <Hide>
+            <motion.h2 variants={titleAnim}>in WI</motion.h2>
           </Hide>
         </motion.div>
-        <motion.p variants={fade}>
+        <motion.p variants={fade} className="text-white">
           Contact us for catering availablity.
         </motion.p>
         {/* <Link to="/contact">

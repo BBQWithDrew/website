@@ -5,11 +5,11 @@ export const About = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   align-items: center;
-  padding: 5rem 10rem;
+  padding: 2rem 2rem;
   color: white;
   background-size: cover;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 700px) {
     display: block;
     padding: 2rem 2rem;
     text-align: center;
@@ -19,7 +19,6 @@ export const About = styled(motion.div)`
 export const Description = styled(motion.div)`
   padding: 2rem;
   font-weight: lighter;
-  border: 2px solid #edc491;
   max-width: 500px;
 `;
 export const Image = styled.div`

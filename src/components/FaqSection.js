@@ -15,7 +15,7 @@ const FaqSection = () => {
         Any Questions <span>FAQ</span>
       </h2>
       <Reveal>
-        <h2>How do I start?</h2>
+        <h2>How do I start</h2>
       </Reveal>
       <Reveal>
         <div className="answer">
@@ -28,7 +28,7 @@ const FaqSection = () => {
       </Reveal>
       <div className="faq-line"></div>
       <Reveal>
-        <h2>Photography you say?</h2>
+        <h2>Photography offered for your event</h2>
       </Reveal>
 
       <Reveal>

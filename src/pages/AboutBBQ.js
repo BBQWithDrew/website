@@ -44,11 +44,11 @@ const ParallaxStuff = () => {
     <motion.div>
       <div
         ref={ref}
-        className="w-full h-screen overflow-hidden relative flex justify-center items-start"
+        className="w-full h-screen overflow-hidden relative flex xs:justify-centern md:justify-start items-start"
       >
         <motion.div
           style={{ y: sectionY }}
-          className="relative lg:mt-28 sm:mt-64 xs:mt-44 z-20"
+          className="relative sm:mt-64 xs:mt-44 z-20"
         >
           <AboutSection />
         </motion.div>

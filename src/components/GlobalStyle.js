@@ -9,8 +9,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    background: #1b1b1b;
-    font-family: 'Inter', sans-serif;
+    background: #1b1b1b;    
     overflow-x:hidden;
 }
 html{
