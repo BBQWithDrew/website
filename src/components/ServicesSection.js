@@ -41,9 +41,9 @@ const ServicesSection = () => {
           <Card>
             <div className="icon">
               <img src={teamwork} alt="team work" />
-              <h3>Caterring for anyone</h3>
+              <h3>Caterring for any ocassion</h3>
             </div>
-            <p>Weddings, corprate events, to family gatherings</p>
+            <p>Weddings, corprate events, family gatherings etc.</p>
           </Card>
           <Card>
             <div className="icon">
@@ -57,7 +57,10 @@ const ServicesSection = () => {
               <img src={diaphragm} alt="diaphragm" />
               <h3>Optional phtography service</h3>
             </div>
-            <p>Wanting some photos of the event we can do that too.</p>
+            <p>
+              Needing a photographer? We can help there too. Keep scrolling for
+              the faq section.
+            </p>
           </Card>
         </Cards>
       </Description>

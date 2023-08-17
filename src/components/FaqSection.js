@@ -33,15 +33,15 @@ const FaqSection = () => {
           <div className="answer">
             <p>Professional Photos</p>
             <p>
-              Like the photos on the website? Our photgpher can accompany the
-              cook and take photos of the event for you as well.
+              Like the photos on the website? Our photographer can accompany the
+              cook to photograph the event.
             </p>
           </div>
         </Toggle>
         <Toggle title="What are the payment mehtods?">
           <div className="answer">
             <p>Accepting of many payments methonds</p>
-            <p>Check, paypal, cashapp, venmo, or just some good ol' cash</p>
+            <p>Check, paypal, or just some good ol' cash</p>
           </div>
         </Toggle>
       </AnimateSharedLayout>

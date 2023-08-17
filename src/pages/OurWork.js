@@ -20,7 +20,9 @@ const OurWork = () => {
   return (
     <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <Event>
-        <motion.h2 variants={fade}>Weddings</motion.h2>
+        <motion.h2 variants={fade}>
+          Weddings, Corporate Events, Graduation Parties and More!
+        </motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/weddings">
           <Hide>

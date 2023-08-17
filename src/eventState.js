@@ -1,6 +1,6 @@
 import weddingBrisket from "./img/WeddingBrisket.png";
 import fullService from "./img/FullService.png";
-import customGrill from "./img/ShedGrill.png";
+import customGrill from "./img/GrillonGrill1.png";
 import grillOnGrill from "./img/GrillonGrill.png";
 import family1 from "./img/Family1.png";
 import family2 from "./img/Family2.png";
@@ -14,19 +14,16 @@ export const EventState = () => {
       url: "/work/weddings",
       awards: [
         {
-          title: "Truly A masterpiece",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Couple from Texas",
+          description: "“Best BBQ North of Texas.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Standing Ovation -Wedding Party",
+          description: "“Not your average wedding food.”",
         },
         {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "-Thomas W.",
+          description: "“I can not get enough”",
         },
       ],
     },
@@ -37,19 +34,13 @@ export const EventState = () => {
       secondaryImg: customGrill,
       awards: [
         {
-          title: "Truly A masterpiece",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Custom Smoker",
+          description: "Built from the ground up, perfected for any cook",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Traegers",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Where it all started. From the first traeger to the fith. We have enough fire power for any size event",
         },
       ],
     },
@@ -60,19 +51,12 @@ export const EventState = () => {
       secondaryImg: family2,
       awards: [
         {
-          title: "Truly A masterpiece",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "To New Friends",
+          description: "Best memories made around a good meal",
         },
         {
-          title: "Fresh look on a brutal sport.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Family",
+          description: "Couldn't do it without the help and support",
         },
       ],
     },
