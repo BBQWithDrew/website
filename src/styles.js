@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import MeatCover from "./img/CoverMeat.png";
+
 import { motion } from "framer-motion";
 export const About = styled(motion.div)`
   min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 5rem 10rem;
-  background-image: url(${MeatCover});
   color: white;
   background-size: cover;
 
@@ -19,7 +17,6 @@ export const About = styled(motion.div)`
 `;
 
 export const Description = styled(motion.div)`
-  flex: 1;
   padding: 2rem;
   font-weight: lighter;
   border: 2px solid #edc491;

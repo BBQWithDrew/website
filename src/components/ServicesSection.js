@@ -6,7 +6,7 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import DrewWinter from "../img/DrewWinter.png";
-import { useScroll } from "./useScroll";
+import { Reveal } from "./reveal";
 import { scrollReval } from "../Animation";
 
 //Styled
@@ -15,83 +15,74 @@ import { About, Description, Image } from "../styles";
 import { motion } from "framer-motion";
 
 const ServicesSection = () => {
-  const [element, controls] = useScroll();
   return (
-    <Services
-      variants={scrollReval}
-      animate={controls}
-      initial="hidden"
-      ref={element}
-    >
-      <Image>
-        <img src={DrewWinter} alt="" />
-      </Image>
-      <Description>
-        <h2>
+    <div className="lg:flex xs:flex-column bg-secondary lg:justify-center">
+      <div className="overflow-hidden lg:ml-[5rem] lg:mr-[10rem]">
+        <img
+          className="w-full xs:object-cover  xs:object-top xs:h-96 sm:h-[45rem] lg:h-full"
+          src={DrewWinter}
+          alt=""
+        />
+      </div>
+      <div className="text-white xs:text-center lg:text-left sm:ml-20 lg:w-[50rem]">
+        <h2 className="">
           Amazing <span>Service</span>
         </h2>
-        <Cards>
-          <Card>
-            <div className="icon">
-              <img src={clock} alt="clock" />
-              <h3>Any Time of Year</h3>
-            </div>
-            <p>Winter, Spring, Summer, Fall</p>
-          </Card>
-          <Card>
-            <div className="icon">
-              <img src={teamwork} alt="team work" />
-              <h3>Caterring for any ocassion</h3>
-            </div>
-            <p>Weddings, corprate events, family gatherings etc.</p>
-          </Card>
-          <Card>
-            <div className="icon">
-              <img src={money} alt="money" />
-              <h3>Affordable options</h3>
-            </div>
-            <p>For any size event</p>
-          </Card>
-          <Card>
-            <div className="icon">
-              <img src={diaphragm} alt="diaphragm" />
-              <h3>Optional phtography service</h3>
-            </div>
-            <p>
-              Needing a photographer? We can help there too. Keep scrolling for
-              the faq section.
-            </p>
-          </Card>
-        </Cards>
-      </Description>
-    </Services>
+        {
+          <div className="flex flex-wrap xs:justify-center lg:justify-normal lg:w-2/3">
+            <Reveal>
+              <Card>
+                <div className="icon">
+                  <img src={clock} alt="clock" />
+                  <h3>Any Time of Year</h3>
+                </div>
+                <p>Winter, Spring, Summer, Fall</p>
+              </Card>
+            </Reveal>
+            <Reveal>
+              <Card>
+                <div className="icon">
+                  <img src={teamwork} alt="team work" />
+                  <h3>Caterring for any ocassion</h3>
+                </div>
+                <p>Weddings, corprate events, family gatherings etc.</p>
+              </Card>
+            </Reveal>
+            <Reveal>
+              <Card>
+                <div className="icon">
+                  <img src={money} alt="money" />
+                  <h3>Affordable options</h3>
+                </div>
+                <p>For any size event</p>
+              </Card>
+            </Reveal>
+            <Reveal>
+              <Card>
+                <div className="icon">
+                  <img src={diaphragm} alt="diaphragm" />
+                  <h3>Optional phtography service</h3>
+                </div>
+                <p>
+                  Needing a photographer? We can help there too. Keep scrolling
+                  for the faq section.
+                </p>
+              </Card>
+            </Reveal>
+          </div>
+        }
+      </div>
+    </div>
   );
 };
 
-const Services = styled(About)`
-  background-image: none;
-  h2 {
-    padding-bottom: 5rem;
-  }
-  p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
-  }
-`;
-
-const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  @media (max-width: 1300px) {
-    justify-content: center;
-  }
-`;
-
 const Card = styled.div`
   flex-basis: 20rem;
+  max-width: 20rem;
   .icon {
     display: flex;
     align-items: center;
+
     h3 {
       margin-left: 1rem;
       background: white;

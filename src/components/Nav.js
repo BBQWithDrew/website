@@ -13,7 +13,7 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link to="/">
-          <img src={Logo} alt="Logo" width="auto" height="80px" />
+          <img src={Logo} className="w-32 h-auto" alt="Logo" />
         </Link>
       </h1>
       <ul>
@@ -42,7 +42,7 @@ const Nav = () => {
           />
         </li>
       </ul>
-      <Social>
+      <div className="mr-4 w-32 flex justify-between">
         <a
           href="https://www.instagram.com/bbq_withdrew/"
           className="youtube social"
@@ -55,15 +55,10 @@ const Nav = () => {
         >
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
-      </Social>
+      </div>
     </StyledNav>
   );
 };
-const Social = styled.div`
-  a {
-    margin-right: 1rem;
-  }
-`;
 
 const StyledNav = styled.nav`
   min-height: 10vh;
@@ -74,7 +69,7 @@ const StyledNav = styled.nav`
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 
   background: rgba(27, 27, 27, 0.7);
   a {
@@ -96,7 +91,6 @@ const StyledNav = styled.nav`
     font-weight: lighter;
   }
   @media (max-width: 1300px) {
-    flex-direction: column;
     padding: 2rem 1rem;
     ul {
       padding: 2rem;

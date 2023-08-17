@@ -34,7 +34,7 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Event>
-      <Event ref={element} variants={fade} animate={controls} initial="hidden">
+      <Event ref={element} variants={fade} animate={controls} initial="show">
         <h2>We got the grills</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/grills">
@@ -43,12 +43,7 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Event>
-      <Event
-        ref={element2}
-        variants={fade}
-        animate={controls2}
-        initial="hidden"
-      >
+      <Event ref={element2} variants={fade} animate={controls2} initial="show">
         <h2>Like Family</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/family">

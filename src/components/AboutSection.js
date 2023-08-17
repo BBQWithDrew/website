@@ -5,7 +5,7 @@ import { titleAnim, fade, photoAnim } from "../Animation";
 import { Link } from "react-router-dom";
 const AboutSection = () => {
   return (
-    <About>
+    <div className="text-white sm:w-[500px] xs:w-full">
       <Description variants={fade}>
         <motion.div>
           <Hide>
@@ -23,11 +23,11 @@ const AboutSection = () => {
         <motion.p variants={fade}>
           Contact us for catering availablity.
         </motion.p>
-        <Link to="/contact">
+        {/* <Link to="/contact">
           <motion.button variants={fade}>Contact Us</motion.button>
-        </Link>
+        </Link> */}
       </Description>
-    </About>
+    </div>
   );
 };
 

@@ -28,7 +28,7 @@ function App() {
       <GlobalStyle />
       <Nav />
       <AnimatePresence
-        exitBeforeEnter
+        mode="wait"
         onExitComplete={() => {
           window.scrollTo(0, 0);
         }}
