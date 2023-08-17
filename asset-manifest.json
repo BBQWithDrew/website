@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.373bf24e.js",
+    "main.css": "/static/css/main.11723ee0.css",
+    "main.js": "/static/js/main.e5362408.js",
     "static/js/787.95742356.chunk.js": "/static/js/787.95742356.chunk.js",
+    "static/media/Drone.mp4": "/static/media/Drone.4caa0deb5ce90d756711.mp4",
     "static/media/WeddingMirror.png": "/static/media/WeddingMirror.a52131e7e0a421d49ae0.png",
     "static/media/Family1.png": "/static/media/Family1.44eeb16838f770af0301.png",
     "static/media/Family.png": "/static/media/Family.b9d457155e71976ce654.png",
@@ -15,16 +17,19 @@
     "static/media/WeddingBrisket.png": "/static/media/WeddingBrisket.75f61a2c5e2d6e5e4c6a.png",
     "static/media/Family2.png": "/static/media/Family2.4893379e84bc2416a5d6.png",
     "static/media/GrillonGrill.png": "/static/media/GrillonGrill.bc63569851c1b09394a9.png",
+    "static/media/CoverWood.png": "/static/media/CoverWood.1d68c0a6db7e3b0fa35e.png",
     "static/media/Logo.PNG": "/static/media/Logo.6a5c1a8234b6ce57ee63.PNG",
     "static/media/clock.svg": "/static/media/clock.96f4d6e305bcf09f6ab49011150aa96d.svg",
     "static/media/teamwork.svg": "/static/media/teamwork.fc65bb98385cec6173b2ace6a1cdbbe7.svg",
     "static/media/money.svg": "/static/media/money.75321fb573afc3644d8f6d4f153ed5c0.svg",
     "static/media/diaphragm.svg": "/static/media/diaphragm.43cd6f2a8448bd445b920a7ae8f041fb.svg",
     "index.html": "/index.html",
-    "main.373bf24e.js.map": "/static/js/main.373bf24e.js.map",
+    "main.11723ee0.css.map": "/static/css/main.11723ee0.css.map",
+    "main.e5362408.js.map": "/static/js/main.e5362408.js.map",
     "787.95742356.chunk.js.map": "/static/js/787.95742356.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.373bf24e.js"
+    "static/css/main.11723ee0.css",
+    "static/js/main.e5362408.js"
   ]
 }
