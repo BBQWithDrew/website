@@ -44,14 +44,14 @@ const FaqSection = () => {
       </Reveal>
       <div className="faq-line"></div>
       <Reveal>
-        <h2>What are the payment mehtods</h2>
+        <h2>What are the payment methods</h2>
       </Reveal>
 
       <Reveal>
         <div className="answer">
           <p>
-            Accepting of many payments methonds. Check, paypal, or just some
-            good ol' cash
+            Accepting of many payments methods. Check, paypal, or just some good
+            ol' cash
           </p>
         </div>
       </Reveal>
