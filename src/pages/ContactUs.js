@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../Animation";
 import styled from "styled-components";
-import family3 from "../img/Family3.png";
+import family from "../gallery/35.jpg";
 import { Image } from "../styles";
 const EMAIL_KEY = process.env.REACT_APP_EMAIL_KEY;
 export const ContactUs = () => {
@@ -82,9 +82,11 @@ export const ContactUs = () => {
           </Hide>
         </div>
       </Contact>
-      <Image>
-        <img src={family3} alt="" />
-      </Image>
+      <div className="xs:mt-[-60px] lg:mt:0">
+        <Image>
+          <img src={family} alt="" />
+        </Image>
+      </div>
     </Container>
   );
 };
@@ -122,6 +124,7 @@ const Contact = styled(motion.div)`
     padding: 2rem;
     font-size: 1rem;
     width: 100%;
+    min-height: 200px;
   }
 `;
 const Title = styled.div`
