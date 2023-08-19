@@ -38,7 +38,7 @@ function App() {
           <Route path="/website" element={<Navigate to="/" replace />} />
           <Route path="/work" exact element={<OurWork />} />
           <Route path="/contact" exact element={<ContactUs />} />
-          <Route path="/work/:id" exact element={<EventDetail />} />
+          {/* <Route path="/work/:id" exact element={<EventDetail />} /> */}
         </Routes>
       </AnimatePresence>
     </div>
