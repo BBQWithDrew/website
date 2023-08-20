@@ -15,7 +15,7 @@ const FaqSection = () => {
         Any Questions <span>FAQ</span>
       </h2>
       <Reveal>
-        <div className="xs:ms-24">
+        <div className="xs:ms-24 md:ms-0">
           <h2>How do I start</h2>
         </div>
       </Reveal>
