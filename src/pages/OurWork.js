@@ -5,7 +5,7 @@ import ImageArray from "../gallery/galleryArray";
 
 const OurWork = () => {
   useEffect(() => {
-    initLightboxJS(process.env.LIGHTHOUSE_API_KEY, "Idividual");
+    initLightboxJS(process.env.LIGHTHOUSE_API_KEY, "individual");
   });
   return (
     <div>
@@ -15,7 +15,9 @@ const OurWork = () => {
         showThumbnails={true}
       >
         {ImageArray.map((img) => {
-          return <img src={img.image} />;
+          return (
+            <img className="w-full rounded" src={img.image} loading="lazy" />
+          );
         })}
       </SlideshowLightbox>{" "}
     </div>

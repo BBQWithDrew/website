@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../Animation";
 import styled from "styled-components";
-import family from "../gallery/35.jpg";
+import family from "../gallery/35.webp";
 import { Image } from "../styles";
 const EMAIL_KEY = process.env.REACT_APP_EMAIL_KEY;
 export const ContactUs = () => {
@@ -82,7 +82,7 @@ export const ContactUs = () => {
           </Hide>
         </div>
       </Contact>
-      <div className="xs:mt-[-60px] lg:mt:0">
+      <div className="xs:mt-[-60px] md:mt-8 lg:mt:0">
         <Image>
           <img src={family} alt="" />
         </Image>
