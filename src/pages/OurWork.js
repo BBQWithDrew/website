@@ -14,12 +14,17 @@ const OurWork = () => {
         className="container grid grid-cols-3 gap-2 mx-auto"
         showThumbnails={true}
       >
-        {ImageArray.map((img) => {
+        {ImageArray.map((img, index) => {
           return (
-            <img className="w-full rounded" src={img.image} loading="lazy" />
+            <img
+              key={index}
+              className="w-full rounded h-[500px] object-cover"
+              src={img.image}
+              loading="lazy"
+            />
           );
         })}
-      </SlideshowLightbox>{" "}
+      </SlideshowLightbox>
     </div>
   );
 };
