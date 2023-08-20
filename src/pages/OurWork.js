@@ -18,7 +18,7 @@ const OurWork = () => {
           return (
             <img
               key={index}
-              className="w-full rounded h-[500px] object-cover"
+              className="w-full rounded xs:h-[150px] md:h-[500px] object-cover"
               src={img.image}
               loading="lazy"
             />
