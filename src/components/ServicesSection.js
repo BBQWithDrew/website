@@ -26,12 +26,14 @@ const ServicesSection = () => {
           Amazing <span>Service</span>
         </h2>
         {
-          <div className="flex flex-wrap xs:justify-center lg:justify-normal lg:w-2/3">
+          <div className="flex xs:flex-col xs:items-center lg:justify-normal lg:w-2/3">
             <Reveal>
               <Card>
                 <div className="icon">
                   <img src={clock} alt="clock" />
-                  <h3>Any Time of Year</h3>
+                  <div className="bg-white text-black p-4 ms-3 text-lg rounded-lg drop-shadow-[-2px_3px_5px_#EDC491]">
+                    Any Time of Year
+                  </div>
                 </div>
                 <p>Winter, Spring, Summer, Fall</p>
               </Card>
@@ -40,7 +42,9 @@ const ServicesSection = () => {
               <Card>
                 <div className="icon">
                   <img src={teamwork} alt="team work" />
-                  <h3>Caterring for any ocassion</h3>
+                  <div className="bg-white text-black p-4 ms-3 text-lg rounded-lg drop-shadow-[-2px_3px_5px_#EDC491]">
+                    Caterring for any ocassion
+                  </div>
                 </div>
                 <p>Weddings, corprate events, family gatherings etc.</p>
               </Card>
@@ -49,7 +53,9 @@ const ServicesSection = () => {
               <Card>
                 <div className="icon">
                   <img src={money} alt="money" />
-                  <h3>Affordable options</h3>
+                  <div className="bg-white text-black p-4 ms-3 text-lg rounded-lg drop-shadow-[-2px_3px_5px_#EDC491]">
+                    Affordable options
+                  </div>
                 </div>
                 <p>For any size event</p>
               </Card>
@@ -58,7 +64,9 @@ const ServicesSection = () => {
               <Card>
                 <div className="icon">
                   <img src={diaphragm} alt="diaphragm" />
-                  <h3>Optional phtography service</h3>
+                  <div className="bg-white text-black p-4 ms-3 text-lg rounded-lg drop-shadow-[-2px_3px_5px_#EDC491]">
+                    Optional phtography service
+                  </div>
                 </div>
                 <p>
                   Needing a photographer? We can help there too. Keep scrolling
