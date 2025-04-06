@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../Animation";
 import styled from "styled-components";
 import family from "../gallery/35.webp";
-import { Image } from "../styles";
+import loading from "../img/loading.gif";
 const EMAIL_KEY = process.env.REACT_APP_EMAIL_KEY;
 export const ContactUs = () => {
   const [formSending, setFormSending] = useState(false);
   const [messageInput, setMessageInput] = useState("");
   const [emailInput, setEmailInput] = useState("");
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -34,7 +35,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <Container>
+    <div className="flex xs:flex-col lg:flex-row">
       <Contact
         variants={pageAnimation}
         initial="hidden"
@@ -54,7 +55,7 @@ export const ContactUs = () => {
           </Hide>
           <Hide>
             <Info variants={titleAnim}>
-              <form ref={form} onSubmit={sendEmail}>
+              <form className="z-20" ref={form} onSubmit={sendEmail}>
                 <FormDiv>
                   <label>Name</label>
                   <input type="text" name="user_name" required />
@@ -73,21 +74,23 @@ export const ContactUs = () => {
                     onChange={(e) => setMessageInput(e.target.value)}
                     required
                   />
-                  <button type="submit" value="Send" disabled={formSending}>
-                    Submit
-                  </button>
+                  {formSending ? (
+                    <img src={loading} className="w-14 place-self-center"></img>
+                  ) : (
+                    <button type="submit" value="Send">
+                      Submit
+                    </button>
+                  )}
                 </FormDiv>
               </form>
             </Info>
           </Hide>
         </div>
       </Contact>
-      <div className="xs:mt-[-60px] md:mt-8 lg:mt:0">
-        <Image>
-          <img src={family} alt="" />
-        </Image>
+      <div className="xs:mt-8 lg:mt-0">
+        <img src={family} alt="" />
       </div>
-    </Container>
+    </div>
   );
 };
 const Info = styled(motion.div)`
@@ -134,12 +137,7 @@ const Title = styled.div`
     margin-top: 5rem;
   }
 `;
-const Container = styled.div`
-  display: flex;
-  @media (max-width: 1300px) {
-    flex-direction: column;
-  }
-`;
+
 const Hide = styled.div`
   overflow: hidden;
 `;

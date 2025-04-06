@@ -33,14 +33,14 @@ const Nav = () => {
             animate={{ width: pathname === "/work" ? "100%" : "0%" }}
           />
         </li>
-        <li>
+        {/* <li>
           <Link to="/contact">Contact Us</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{ width: pathname === "/contact" ? "100%" : "0%" }}
           />
-        </li>
+        </li> */}
       </ul>
       <div className="mr-4 w-32 flex justify-between">
         <a
