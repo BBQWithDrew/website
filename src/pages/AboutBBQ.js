@@ -15,23 +15,18 @@ import { useRef } from "react";
 const AboutBBQ = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   useEffect(() => {
-    const hasSeenModal = localStorage.getItem("hasSeenModal");
-    if (!hasSeenModal) {
-      setIsModalOpen(true);
-      localStorage.setItem("hasSeenModal", "true");
+    const hasSeenModal = sessionStorage.getItem("hasSeenModal");
+
+    if (hasSeenModal !== "true") {
+      const timer = setTimeout(() => {
+        setIsModalOpen(true);
+        sessionStorage.setItem("hasSeenModal", "true");
+      }, 2000);
+
+      return () => clearTimeout(timer);
     }
-
-    // Extra: Clear the cache when the user leaves the site
-    const handleBeforeUnload = () => {
-      localStorage.removeItem("hasSeenModal");
-    };
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
   }, []);
+
   const closeModal = () => {
     setIsModalOpen(false);
   };
