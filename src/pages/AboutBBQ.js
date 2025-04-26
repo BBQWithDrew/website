@@ -17,17 +17,25 @@ const AboutBBQ = () => {
   useEffect(() => {
     const hasSeenModal = localStorage.getItem("hasSeenModal");
     if (!hasSeenModal) {
-      const timer = setTimeout(() => {
-        setIsModalOpen(true);
-        localStorage.setItem("hasSeenModal", "true");
-      }, 2000); // Delay of 2 seconds
-
-      return () => clearTimeout(timer); // Clear timeout if component unmounts
+      setIsModalOpen(true);
+      localStorage.setItem("hasSeenModal", "true");
     }
+
+    // Extra: Clear the cache when the user leaves the site
+    const handleBeforeUnload = () => {
+      localStorage.removeItem("hasSeenModal");
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
   }, []);
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return isModalOpen ? (
     <Modal closeModal={closeModal} />
   ) : (
