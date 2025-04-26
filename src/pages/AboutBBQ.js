@@ -18,12 +18,8 @@ const AboutBBQ = () => {
     const hasSeenModal = sessionStorage.getItem("hasSeenModal");
 
     if (hasSeenModal !== "true") {
-      const timer = setTimeout(() => {
-        setIsModalOpen(true);
-        sessionStorage.setItem("hasSeenModal", "true");
-      }, 2000);
-
-      return () => clearTimeout(timer);
+      setIsModalOpen(true);
+      sessionStorage.setItem("hasSeenModal", "true");
     }
   }, []);
 
