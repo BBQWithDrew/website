@@ -1,7 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Description, Hide } from "../styles";
 import { titleAnim, fade } from "../Animation";
+import { React } from "react";
 
 const AboutSection = () => {
   return (
